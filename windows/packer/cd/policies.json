@@ -1,0 +1,46 @@
+{
+  "policies": {
+    "DisableFeedbackCommands": true,
+    "DisableFirefoxAccounts": true,
+    "DisableFirefoxStudies": true,
+    "DisablePocket": true,
+    "DisableProfileImport": true,
+    "DisableProfileRefresh": true,
+    "DisableTelemetry": true,
+    "DisplayBookmarksToolbar": true,
+    "DisplayMenuBar": true,
+    "DontCheckDefaultBrowser": true,
+    "EnableTrackingProtection": {
+      "Cryptomining": true,
+      "Fingerprinting": true,
+      "Value": true
+    },
+    "ExtensionSettings": {
+      "@testpilot-containers": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/file/3932862",
+        "installation_mode": "normal_installed"
+      },
+      "foxyproxy@eric.h.jung": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/file/3616824",
+        "installation_mode": "normal_installed"
+      },
+      "uBlock0@raymondhill.net": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/file/3961087",
+        "installation_mode": "normal_installed"
+      }
+    },
+    "Homepage": {
+      "StartPage": "none"
+    },
+    "NewTabPage": false,
+    "NoDefaultBookmarks": true,
+    "OverrideFirstRunPage": "",
+    "OverridePostUpdatePage": "",
+    "Preferences": {
+      "browser.urlbar.suggest.openpage": false,
+      "extensions.getAddons.showPane": false,
+      "network.IDN_show_punycode": true
+    },
+    "SearchSuggestEnabled": false
+  }
+}
