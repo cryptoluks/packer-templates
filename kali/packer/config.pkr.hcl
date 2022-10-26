@@ -2,12 +2,12 @@ variable "access_token" {}
 
 variable "iso_checksum" {
   type    = string
-  default = "sha256:d7444e8afb74b9b3c8c8be9f15fb64eddc0414960d9e2691c465740d58573eff"
+  default = "sha256:82f702acf37771ac27355c5f9170bf365a73f0cc9e571fb422f7aa58ca218d48"
 }
 
 variable "iso_url" {
   type    = string
-  default = "https://cdimage.kali.org/kali-2022.2/kali-linux-2022.2-installer-netinst-amd64.iso"
+  default = "https://cdimage.kali.org/kali-2022.3/kali-linux-2022.3-installer-netinst-amd64.iso"
 }
 
 source "virtualbox-iso" "kali" {
