@@ -59,6 +59,7 @@ build {
 
     post-processor "vagrant" {
       vagrantfile_template = "provision/Vagrantfile.template"
+      output = "windows.box"
     }
 
     post-processor "vagrant-cloud" {
