@@ -4,3 +4,4 @@
 secrets.auto.pkrvars.hcl
 output-*
 Vagrantfile
+*.iso
