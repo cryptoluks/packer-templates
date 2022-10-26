@@ -97,7 +97,5 @@ EOF
 
 # Disable xfce power management and do not lock screen if system is going to sleep
 su vagrant <<"EOF"
-DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus xfconf-query -c xfce4-power-manager --create -p /xfce4-power-manager/dpms-enabled -t bool -s false
-DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus xfconf-query -c xfce4-power-manager --create -p /xfce4-power-manager/lock-screen-suspend-hibernate -t bool -s false
-DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus xfconf-query -c xfce4-session --create -p /shutdown/LockScreen -t bool -s false
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -s true
 EOF
