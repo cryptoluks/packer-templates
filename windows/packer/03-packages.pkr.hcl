@@ -1,7 +1,7 @@
 source "virtualbox-vm" "windows-packages" {
   guest_additions_interface = "sata"
   guest_additions_mode      = "attach"
-  guest_additions_url       = "https://download.virtualbox.org/virtualbox/6.1.36/VBoxGuestAdditions_6.1.36.iso"
+  guest_additions_url       = "https://download.virtualbox.org/virtualbox/6.1.40/VBoxGuestAdditions_6.1.40.iso"
   headless                  = true
   shutdown_command          = "shutdown /s /t 0 /f /d p:4:1 /c \"Packer Shutdown\""
   ssh_password              = "vagrant"
