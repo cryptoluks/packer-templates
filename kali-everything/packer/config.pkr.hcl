@@ -2,12 +2,12 @@ variable "access_token" {}
 
 variable "iso_checksum" {
   type    = string
-  default = "sha256:6fc29055cf293f9f04113ba7b8634de989675a26f85d572dbe055d29b0f59a42"
+  default = "sha256:82f702acf37771ac27355c5f9170bf365a73f0cc9e571fb422f7aa58ca218d48"
 }
 
 variable "iso_url" {
   type    = string
-  default = "kali-linux-2022.3-installer-everything-amd64.iso"
+  default = "https://cdimage.kali.org/kali-2022.3/kali-linux-2022.3-installer-netinst-amd64.iso"
 }
 
 source "virtualbox-iso" "kali-everything" {
@@ -24,7 +24,7 @@ source "virtualbox-iso" "kali-everything" {
     "boot<enter>"
   ]
   cpus                     = 2
-  disk_size                = 61440
+  disk_size                = 100000
   firmware                 = "efi"
   gfx_controller           = "vmsvga"
   gfx_vram_size            = 128
