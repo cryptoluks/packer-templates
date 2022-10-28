@@ -24,7 +24,7 @@ source "virtualbox-iso" "kali-everything" {
     "boot<enter>"
   ]
   cpus                     = 2
-  disk_size                = 100000
+  disk_size                = 61440
   firmware                 = "efi"
   gfx_controller           = "vmsvga"
   gfx_vram_size            = 128
